@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -308,6 +309,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1502936219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd9ebf1401392e4bbd47fea32f47642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: SteamAudioUnity::SteamAudio.SteamAudioListener
+  currentBakedListener: {fileID: 0}
+  applyReverb: 0
+  reverbType: 0
+  useAllProbeBatches: 0
+  probeBatches: []
+  mTotalDataSize: 0
+  mProbeDataSizes: 
+  mIdentifier:
+    type: 0
+    variation: 0
+    endpointInfluence:
+      center:
+        x: 0
+        y: 0
+        z: 0
+      radius: 0
+  mProbeBatchesUsed: []
 --- !u!1 &1323133074
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +379,14 @@ MonoBehaviour:
   overrideNeighbor: 1
   neighborBiasOverride: 0.2
   neighborRadiusOverride: 28
+  enableWeather: 1
+  spawnsPerPeriod: 8
+  spawnPeriodSeconds: 30
+  callResponseChance: 0.85
+  answersMin: 1
+  answersMax: 2
+  answerDelayMin: 2.5
+  answerDelayMax: 7
   enableFlyovers: 1
   flyoverChance: 0.15
   flyoverSpeed: 12
